@@ -3,48 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GSAP Landing Page</title>
+  <title>Landing</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <h2 class="logo">SmitDev</h2>
-    <ul class="nav-links">
-      <li>Home</li>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
+<header class="nav">
+  <div class="container nav-inner">
+    <h1 class="logo">Smit</h1>
+    <nav>
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
 
   <!-- HERO -->
-  <section class="hero">
-    
-    <div class="hero-content">
-      <h1 class="hero-title">Build. Animate. Impress.</h1>
-      <p class="hero-text">Clean landing page with smooth GSAP animations</p>
-      <button class="cta">Get Started</button>
+  <section class="hero container">
+    <div class="left">
+      <h2 class="title">Build clean web experiences</h2>
+      <p class="subtitle">Simple landing page with smooth animations</p>
+      <button class="btn">Get Started</button>
     </div>
 
-    <div class="hero-image">
-      <img src="https://picsum.photos/400" alt="Hero Image">
+    <div class="right">
+      <img src="https://picsum.photos/400" alt="preview" />
     </div>
-
   </section>
 
   <!-- FEATURES -->
-  <section class="features">
-    <div class="card">⚡ Fast</div>
-    <div class="card">🎨 Modern</div>
-    <div class="card">🚀 Animated</div>
+  <section class="features container">
+    <div class="box">Fast</div>
+    <div class="box">Modern</div>
+    <div class="box">Animated</div>
   </section>
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+</main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
